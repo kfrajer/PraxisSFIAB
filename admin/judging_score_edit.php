@@ -57,7 +57,7 @@
 				 //$count = $_POST['count'];
 				 // inserting into column count only
 				 //$q=mysql_query("UPDATE scores SET score='$score' WHERE count='$count' ");
-			         $q=mysql_query("UPDATE scores SET score='$score' WHERE projectnumber='$projnumber' ");
+			         $q=mysql_query("UPDATE scores SET score='$score' WHERE projectnumber='$projnumber' and year='$year' ");
 				 // check for database error
 				 if ($q == FALSE)
 				 {
